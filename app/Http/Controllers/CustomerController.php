@@ -9,9 +9,9 @@ class CustomerController extends Controller
 {
     private CustomerRepoInterface $customer_repo;
 
-    public function __construct(CustomerRepoInterface $user_repo)
+    public function __construct(CustomerRepoInterface $customer_repo)
     {
-        $this->customer_repo = $user_repo;
+        $this->customer_repo = $customer_repo;
     }
 
     public function index()

@@ -21,15 +21,17 @@ class CustomerTest extends TestCase
         return $customerRepo;
     }
 
+    public function test_populate_customers()
+    {
+        $customer_data = $this->getRepo()->store();
+        $this->assertTrue($customer_data);
+    }
+
     public function test_check_if_user_exist()
     {
         $customer_data = $this->getRepo()->customer(1);
         $this->assertTrue($customer_data!="invalid");
     }
 
-    public function test_populate_customers()
-    {
-        $customer_data = $this->getRepo()->store();
-        $this->assertTrue($customer_data);
-    }
+   
 }
