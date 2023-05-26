@@ -20,6 +20,4 @@ use Illuminate\Support\Facades\Route;
 Route::prefix("customers")->group(function(){
     Route::get("/",[CustomerController::class,"index"])->name("customers.index");
     Route::get("/{id}",[CustomerController::class,"show"])->name("customers.show");
-    Route::post("/store",[CustomerController::class,"store"])->name("customers.store");
-    
 });
