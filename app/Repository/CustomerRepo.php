@@ -105,7 +105,7 @@ class CustomerRepo implements CustomerRepoInterface
 
 
     /**
-     * create Post
-     * @return Post
+     * create Customer
+     * @return Customer
      */
 }
