@@ -195,6 +195,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         App\Providers\RepositoryServiceProvider::class,
+        LaravelDoctrine\ORM\DoctrineServiceProvider::class,
 
     ],
 
@@ -211,6 +212,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'EntityManager' => LaravelDoctrine\ORM\Facades\EntityManager::class
     ])->toArray(),
 
 ];

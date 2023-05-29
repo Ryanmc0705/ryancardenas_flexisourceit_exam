@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repository\CustomerDoctrineRepo;
+use App\Repository\CustomerDoctrineRepoInterface;
 use App\Repository\CustomerRepo;
 use App\Repository\CustomerRepoInterface;
 use Illuminate\Support\ServiceProvider;
@@ -17,6 +19,7 @@ class RepositoryServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(CustomerRepoInterface::class,CustomerRepo::class);
+
     }
 
     /**
